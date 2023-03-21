@@ -1,7 +1,8 @@
-import { Button, Container, Navbar, Modal } from "react-bootstrap";
+import { Button, Container, Navbar, Modal, Nav } from "react-bootstrap";
 import { useState, useContext } from "react";
-import { CartContext } from "../CartContext"; 
+import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
+import { NavLink } from "react-router-dom";
 
 function NavbarComponent() {
   const cart = useContext(CartContext);
@@ -34,11 +35,20 @@ function NavbarComponent() {
   );
   return (
     <>
-      <Navbar expand='sm' className='bg-white shadow-sm mb-3'>
+      <Navbar expand="sm" className="bg-white shadow-sm mb-3">
         <Container>
-          <Navbar.Brand href='/'>Logo</Navbar.Brand>
+          <Navbar.Brand href="/">Logo</Navbar.Brand>
+
+          <NavLink className="nav-link mx-2" to="/store">
+            <Nav.Item>Store</Nav.Item>
+          </NavLink>
+
+          <NavLink className="nav-link mx-2" to="/about">
+            <Nav.Item>About</Nav.Item>
+          </NavLink>
+
           <Navbar.Toggle />
-          <Navbar.Collapse className='justify-content-end'>
+          <Navbar.Collapse className="justify-content-end">
             <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
           </Navbar.Collapse>
         </Container>
@@ -63,7 +73,7 @@ function NavbarComponent() {
 
               <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
 
-              <Button variant='success' onClick={checkout}>
+              <Button variant="success" onClick={checkout}>
                 Purchase items!
               </Button>
             </>

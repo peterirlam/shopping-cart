@@ -1,20 +1,22 @@
 import { Card, Button, Form, Row, Col } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
+import DefaultImage from "../images/ProductStoreImage.png";
 
 function ProductCard(props) {
   const product = props.product;
-  const cart = useContext(CartContext); 
-  const productQuantity = cart.getProductQuantity(product.id); 
+  const cart = useContext(CartContext);
+  const productQuantity = cart.getProductQuantity(product.id);
   console.log(cart.items);
   return (
     <Card>
-      {/* <Card.Img
-        variant='top'
-        src={product.imgUrl}
-        height='200px'
+      {/* If we get image from product OR default image will shown */}
+      <Card.Img
+        variant="top"
+        src={product?.imgUrl || DefaultImage}
+        height="200px"
         style={{ objectFit: "cover" }}
-      /> */}
+      />
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>{product.description}</Card.Text>
@@ -23,37 +25,37 @@ function ProductCard(props) {
           <>
             <Form as={Row}>
               {" "}
-              <Form.Label column='true' sm='6'>
+              <Form.Label column="true" sm="6">
                 In Cart: {productQuantity}
               </Form.Label>
-              <Col sm='6'>
+              <Col sm="6">
                 <Button
-                  sm='6'
+                  sm="6"
                   onClick={() => cart.addOneToCart(product.id)}
-                  className='mx-2'
+                  className="mx-2"
                 >
                   +
                 </Button>
                 <Button
-                  sm='6'
+                  sm="6"
                   onClick={() => cart.removeOneFromCart(product.id)}
-                  className='mx-2'
+                  className="mx-2"
                 >
                   -
                 </Button>
               </Col>
             </Form>
             <Button
-              variant='danger'
+              variant="danger"
               onClick={() => cart.deleteFromCart(product.id)}
-              className='my-2'
+              className="my-2"
             >
               Remove from cart
             </Button>
           </>
         ) : (
           <Button
-            variant='primary'
+            variant="primary"
             onClick={() => cart.addOneToCart(product.id)}
           >
             Add To Cart

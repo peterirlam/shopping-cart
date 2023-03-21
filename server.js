@@ -9,7 +9,7 @@ var cors = require("cors");
 const stripe = require("stripe")(
   "sk_test_51MlsYIJatKHrupv6K1jpugHYafS21yPiCfiSzIcx1eGhdqSUr8aGt8ZUfip6CNbWedz4CXFM0SuCPPaRb82b58K400lMHcanY1"
 );
-
+const path = require("path");
 // create express server
 const app = express();
 // use our middleware cors
@@ -43,6 +43,10 @@ app.post("/checkout", async (req, res) => {
       url: session.url,
     })
   );
+});
+app.use("/store", (req, res) => {
+  // const path = "http://localhost:4000/";
+  res.sendFile(path.join(__dirname, "store/build", "index.html"));
 });
 
 app.listen(4000, () => console.log("Listening on port 4000!"));

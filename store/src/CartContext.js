@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { productsArray, getProductData } from "./productsStore";
+import { productsArray, getProductData } from "./ProductsStore";
 
 export const CartContext = createContext({
   items: [],
@@ -11,20 +11,18 @@ export const CartContext = createContext({
 });
 
 export function CartProvider({ children }) {
-  const [cartProducts, setCartProducts] = useState(
-    []
-  ); 
+  const [cartProducts, setCartProducts] = useState([]);
   function getProductQuantity(id) {
     const quantity = cartProducts.find(
       (product) => product.id === id
     )?.quantity;
-   
+
     if (quantity === undefined) {
       return 0;
     }
     return quantity;
   }
- 
+
   function addOneToCart(id) {
     const quantity = getProductQuantity(id);
 
@@ -37,13 +35,11 @@ export function CartProvider({ children }) {
         },
       ]);
     } else {
-
       setCartProducts(
-        cartProducts.map(
-          (product) =>
-            product.id === id 
-              ? { ...product, quantity: product.quantity + 1 } 
-              : product 
+        cartProducts.map((product) =>
+          product.id === id
+            ? { ...product, quantity: product.quantity + 1 }
+            : product
         )
       );
     }
@@ -55,11 +51,10 @@ export function CartProvider({ children }) {
       deleteFromCart(id);
     } else {
       setCartProducts(
-        cartProducts.map(
-          (product) =>
-            product.id === id 
-              ? { ...product, quantity: product.quantity - 1 } 
-              : product 
+        cartProducts.map((product) =>
+          product.id === id
+            ? { ...product, quantity: product.quantity - 1 }
+            : product
         )
       );
     }
@@ -67,7 +62,7 @@ export function CartProvider({ children }) {
   function deleteFromCart(id) {
     setCartProducts((cartProducts) =>
       cartProducts.filter((currentProduct) => {
-        return currentProduct.id !== id; 
+        return currentProduct.id !== id;
       })
     );
   }
@@ -94,5 +89,3 @@ export function CartProvider({ children }) {
 }
 
 export default CartProvider;
-
-
