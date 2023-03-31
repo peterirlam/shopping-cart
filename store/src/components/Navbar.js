@@ -12,7 +12,7 @@ function NavbarComponent() {
   const handleShow = () => setShow(true);
 
   const checkout = async () => {
-    await fetch("http://localhost:4000/checkout", {
+    await fetch("https://gaming-mouse-webapp.herokuapp.com/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,10 +29,7 @@ function NavbarComponent() {
       });
   };
 
-  const productsCount = cart.items.reduce(
-    (sum, product) => sum + product.quantity,
-    0
-  );
+  const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
   return (
     <>
       <Navbar expand="sm" className="bg-white shadow-sm mb-3">
@@ -64,11 +61,7 @@ function NavbarComponent() {
             <>
               <p>Items in your cart:</p>
               {cart.items.map((currentProduct, idx) => (
-                <CartProduct
-                  key={idx}
-                  id={currentProduct.id}
-                  quantity={currentProduct.quantity}
-                ></CartProduct>
+                <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
               ))}
 
               <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
