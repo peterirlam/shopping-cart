@@ -12,7 +12,7 @@ function NavbarComponent() {
   const handleShow = () => setShow(true);
 
   const checkout = async () => {
-    await fetch("https://gaming-mouse-webapp.herokuapp.com/checkout", {
+    await fetch("https://gaming-mouse-app.herokuapp.com/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
