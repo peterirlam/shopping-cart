@@ -20,4 +20,4 @@ See the [live demo](https://gaming-mouse-app.herokuapp.com/store) deployed on He
 
 Up till recently, my focus has been on the frontend. I'm now turning my attention to backend technologies such as Express.js, Java and GraphQL (although not strictly backend).
 
-Furthermore, as shopping carts are such a useful and necessary function for most online companies, I wanted to evidence my ability to build one.
+Furthermore, as shopping carts are such a useful and necessary function for most online companies, I wanted to evidence my ability to build a fully functional cart with payment processing system.
