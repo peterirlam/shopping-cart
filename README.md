@@ -33,8 +33,8 @@ This repo is still a work in progress. I need to add:
 
 ## 🏁 &nbsp; Finished product
 
-✅ Fully functional shopping cart: add, remove and delete items
-✅ Modal checkout when ready to purchase items
+✅ Fully functional shopping cart: add, remove and delete items\
+✅ Modal checkout when ready to purchase items\
 ✅ Redirects user to Stripe 
 
 ## Contributors
@@ -43,16 +43,8 @@ This repo is still a work in progress. I need to add:
 
 <a href="https://github.com/peterirlam"><img
 src="https://avatars.githubusercontent.com/u/47816066?s=96&v=4"
-title="Peter Irlam" width="80" height="80"></a>
-
-[//]: contributor-faces
-
-<a href="https://github.com/usamaajaved"><img
+title="Peter Irlam" width="80" height="80"></a>&nbsp; &nbsp; <a href="https://github.com/usamaajaved"><img
 src="https://avatars.githubusercontent.com/u/46658189?v=4"
-title="Usamaa Javed" width="80" height="80"></a>
-
-[//]: contributor-faces
-
-<a href="https://github.com/tushar-nk"><img
+title="Usamaa Javed" width="80" height="80"></a>&nbsp; &nbsp; <a href="https://github.com/tushar-nk"><img
 src="https://avatars.githubusercontent.com/u/104885774?v=4"
 title="Tushar Nk" width="80" height="80"></a>
