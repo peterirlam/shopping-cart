@@ -16,7 +16,7 @@ See the [live demo](https://gaming-mouse-app.herokuapp.com/store) deployed on He
 - [x] Stripe
 - [x] Heroku
 
-## 🎱 &nbsp; Why I Chose This Project
+## 🔥 &nbsp; Why I Chose This Project
 
 Up till recently, my focus has been on the frontend. I'm now turning my attention to backend technologies such as Express.js, Java and GraphQL (although not strictly backend).
 
