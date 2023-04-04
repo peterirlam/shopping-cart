@@ -31,13 +31,13 @@ This repo is still a work in progress. I need to add:
 - [x] More products to the store
 - [x] Move images folder from public to src as images are optimized inside src
 
-## 🏁 &nbsp; Finished product
+## 🏁 &nbsp; Finished Product
 
 ✅ Fully functional shopping cart: add, remove and delete items\
 ✅ Modal checkout when ready to purchase items\
 ✅ Redirects user to Stripe 
 
-## Contributors
+## 👨‍💻 Contributors
 
 [//]: contributor-faces
 
