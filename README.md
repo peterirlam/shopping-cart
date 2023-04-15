@@ -25,7 +25,7 @@ Furthermore, as shopping carts are such a useful and necessary function for most
 ## ⏲️ &nbsp; If I Had More Time I Would Change
 
 This repo is still a work in progress. I need to add:
-- [x] A logo
+- [x] A logo (✅I have now added the logo)
 - [x] A favicon
 - [x] Some content to the Home and About page
 - [x] More products to the store
