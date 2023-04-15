@@ -35,7 +35,9 @@ function NavbarComponent() {
     <>
       <Navbar expand="sm" className="bg-white shadow-sm mb-3">
         <Container>
-          <Navbar.Brand href="/">Logo</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img src={Logo} width="40" height="40" alt=""></img>
+          </Navbar.Brand>
     
           <NavLink className="nav-link mx-2" to="/home">
             <Nav.Item>Home</Nav.Item>
