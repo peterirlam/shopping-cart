@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 import { NavLink } from "react-router-dom";
+import Logo from '../logo.png';
 
 function NavbarComponent() {
   const cart = useContext(CartContext);
