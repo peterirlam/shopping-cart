@@ -3,7 +3,7 @@
 
 # 📖 &nbsp; Overview
 
-This app uses Express on the backend and features a fully functional shopping cart. Add or remove items and your basket will update. Click on your cart to see your totals displayed in a modal. When you're ready to purchase your items, you'll be redirected to the Stripe payment dashboard. This details your items including their descriptions. Don't worry you won't be charged!
+This app uses Express on the backend and features a fully functional shopping cart. Built using react-router-dom, react hooks and context as well as supporting Stripe payment processing. Add or remove items and your basket will update. Click on your cart to see your totals displayed in a modal. When you're ready to purchase your items, you'll be redirected to the Stripe payment dashboard. This details your items including their descriptions. Don't worry you won't be charged!
 
 ## 🔗 &nbsp; Demo
 
