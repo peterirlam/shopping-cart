@@ -18,9 +18,7 @@ See the [live demo](https://gaming-mouse-app.herokuapp.com/store) deployed on He
 
 ## 🔥 &nbsp; Why I Chose This Project
 
-Up till recently, my focus has been on the frontend. I'm now turning my attention to backend technologies such as Express.js, Java and GraphQL (although not strictly backend).
-
-Furthermore, as shopping carts are such a useful and necessary function for most online companies, I wanted to evidence my ability to build a fully functional cart with payment processing system.
+Up till recently, I've dabbled in frontend development. But I'd also like to understand what happens on the backend using technologies such as Express.js, Java and GraphQL (although not strictly backend).
 
 ## ⏲️ &nbsp; If I Had More Time I Would Change
 
